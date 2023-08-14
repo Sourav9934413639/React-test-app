@@ -1,0 +1,61 @@
+.home{
+    background-color: #0b3b3b;
+    width: 80%;    
+    margin: 20rem auto;
+    padding:1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    font-family: verdana;
+    border-bottom: 5px double black;
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+.home>div{
+    display: flex;
+    align-items: center;
+    height: 25vmin;
+}
+.home button{
+    
+    margin: 0 2rem;
+    padding: 0.5rem 1rem;
+    height: 150px;
+    width: 150px;
+    color: white;
+    background-color: black;
+    font: 800 1rem cursive,sans-serif;
+    border: none;
+    border-radius: 100%;
+    transition:all 0.4s linear;
+    position: relative;
+    
+}
+.home>div>button:first-child{
+    animation: wave-form 1.5s ease 0.5s infinite alternate;
+}
+.home>div>button:nth-child(2){
+    animation: wave-form 1.5s ease 1s infinite alternate;
+}
+.home>div>button:nth-child(3){
+    animation: wave-form 1.5s ease 1.5s infinite alternate;
+}
+.home>div>button:last-child{
+    animation: wave-form 1.5s ease 2s infinite alternate;
+}
+.home button:hover{
+    background-color: rgb(1, 51, 1);
+}
+
+@keyframes wave-form {
+    from{
+       top: 0;
+    }
+    to{
+    top: 30px;
+    }
+}
